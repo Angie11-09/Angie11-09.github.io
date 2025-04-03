@@ -1,0 +1,144 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4B0082;
+    color: #FFD700;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4B0082;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 150px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a button {
+    background-color: #FFD700;
+    color: #4B0082;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #4B0082;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#vortex:hover, #ps:hover, #nintendo:hover, #xbox:hover {
+    background-color: rgb(255, 255, 255);
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.barra-busqueda {
+    background-color: #FFD700;
+    color: #4B0082;
+    border: 2px solid #4B0082;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.descuentos {
+    background-color: #FFD700;
+    color: #4B0082;
+    border:  solid #4B0082;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.descuentos:hover {
+    background-color: white;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.games-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.game-card {
+    background-color: white;
+    color: #4B0082;
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    border: 2px solid #FFD700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.game-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 2px solid #FFD700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.game-card a:hover {
+    background-color: #4B0082;
+    color: #FFD700;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.imagen-juego {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.age-restriction {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #4B0082;
+    color: #FFD700;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+body {
+    flex-wrap: wrap;
+}

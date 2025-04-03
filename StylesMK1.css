@@ -1,0 +1,77 @@
+body {
+    background-color: #001f3f;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.game-card img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.game-description {
+    max-width: 500px;
+    background-color: #002b5c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    color: #1e90ff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.buy-button,#botonInicio {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#botonInicio :hover{background-color: #0074cc;}
+
+.buy-button:hover {
+    background-color: #0074cc;
+}
+
+footer {
+    background-color: #003366;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+body {
+    flex-wrap: wrap;
+}

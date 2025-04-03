@@ -1,227 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Angie Atehortua">
-    <title>Animales en peligro de extinción</title>
-</head>
-<style>
-
+    <title>VortexGamer</title>
+    <link rel="stylesheet" href="/styles.css">
     
-      header {
-        background-color: rgb(47, 202, 47);
-        color:rgb(0, 0, 0);
-        padding: 20px;
-        text-align: center;
-       
-      }
-      h1 {
-        
-        font-size: 2rem
-       
-      }
-      .container{
-       
-        max-width: 1000px;
-        margin: 30px;
-        padding: 20px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
-        box-shadow:0 4px 8px rgba(161, 173, 154, 0.144);
-      }
-
-      .animal-list {
-        padding: 0;
-        }
-        .animal-list li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            padding: 15px;
-            background: #fffafa;
-            border-radius: 50px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            
-        }
-
-        .animal-list li:hover{
-            transform: translateY(-5px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .animal-list img {
-            width: 80px;
-            height: 80px;
-            border-radius: 10px;
-            margin-right: 15px;
-            
-        }
-
-        .animal-list h3 {
-            margin: 0;
-            font-size: 1.2rem;
-            color: #2c3e50;
-        }
-
-        .animal-list p {
-            margin: 5px 0 0;
-            color: #555;
-            font-size: 0.9rem;
-        }
-
-</style>
-
+</head>
 <body>
     <header>
-        <h1>Animales en Peligro de Extinción</h1>
+            <img class="logo" src="/Flux_Dev_Create_an_image_of_a_logo_for_a_video_game_webpage_ca_2-removebg-preview (1).png" alt="logo de vortex">
+        
+        <nav class="navbar">
+            <input type="checkbox"id="menu">
+            <label for="menu" class="iconos">
+              <section class="linea"></section>
+              <section class="linea"></section>
+              <section class="linea"></section>
+              
+            </label>
+            <ul class="enlaces">
+                <li><input type="text" placeholder="Buscar juegos" class="barra-busqueda"></li>
+                <li><a href="/xbox .html" class="platforma"><button id="xbox">Xbox</button></a></li>
+                <li><a href="/ps.html" class="platforma"><button id="ps">PS5/PS4</button></a></li>
+                <li><a href="/nintendo.html" class="platforma"><button id="nintendo">Nintendo</button></a></li>
+                <li><a href="/pc.html" class="platforma"><button id="pc">PC</button></a></li>
+                <li> <a href="/descuento.html"   ><button class="descuentos" id="des">Descuento</button></a></li>
+           
+            </ul>
+        </nav>
+        
+       
     </header>
-
-    <div class="container">
-        <ul class="animal-list">
-
-            <li>
-                <img src="chimpance.jpg" alt="Chimpancé">
-                <div>
-                <h3>Chimpancé</h3>
-                <p>La caza furtiva, enfermedades, expansión agrícola y pérdida de hábitat han reducido
-                    significativamente la población de chimpancés en África subsahariana en más del 50% desde 1975,
-                    tendencia que continuará. Su dieta es principalmente fruta, complementada con vegetación, insectos y
-                    mamíferos, siendo los más carnívoros entre los grandes simios. Por ello, están considerados en
-                    peligro de extinción.</p>
-                </div>
     
-    </li>
-
-    <li>
-        <img src="tigre.jpg" alt="Tigre">
-        <div>
-            <h3>Tigre</h3>
-            <p>El tigre, catalogado como en peligro de extinción, ha visto disminuir su población en al menos nueve de
-                los 13 países en los últimos 30 años. Su dieta principal incluye cerdos salvajes y ciervos, pero también
-                consumen aves, peces e insectos cuando escasean las presas. Se encuentran en bosques tropicales y
-                templados de Asia, Rusia y China, y se han adaptado a hábitats diversos, como manglares y selvas
-                tropicales.</p>
+    <main>
+        <section class="games-grid">
+            <div class="game-card xbox">
+                <a class="game-card xbox" href="/fc25.html">
+                    <img class="imagen-juego" src="https://store-images.s-microsoft.com/image/apps.17199.13862251612333050.e2a26818-1dd0-4a49-a9dd-bde439500774.e2f6328f-fc2c-4ba4-8daa-0437f02a34e8" alt="Juego Xbox">
+                    <h3>EA SPORTS FC 25</h3>
+                    <p>Precio: COP 79.990</p>
+                    <p class="age-restriction">+11</p>
+                </a>
             </div>
-    </li>
-
-    <li>
-        <img src="ballena.jpg" alt="Ballena Azúl">
-        <div>
-            <h3>Ballena Azúl</h3>
-            <p>La ballena azul ha experimentado una reducción del 8% en los últimos años, situándose en peligro crítico
-                de extinción. La antigua población antártica ha sido drásticamente reducida. Su dieta consiste casi
-                exclusivamente en pequeños crustáceos, y sus patrones migratorios varían; algunas permanecen en áreas de
-                alta productividad todo el año, mientras que otras realizan largas migraciones entre aguas tropicales y
-                áreas de alimentación en latitudes altas.</p>
-        </div>
-    </li>
-
-    <li>
-        <img src="lemur.jpg" alt="Lémur">
-        <div>
-            <h3>Lémur</h3>
-            <p>Más de 80 especies de lémures están en peligro crítico o en peligro de extinción, y más de 30 son
-                vulnerables, incluyendo el lémur dorado y el de cola anillada. La principal causa es la pérdida de
-                hábitat debido a la agricultura y quema de bambú, que es una fuente de alimento clave. La caza también
-                contribuye a su declive.</p>
-        </div>
-    </li>
-
-    <li>
-        <img src="vaquita.jpg" alt="Vaquita Marina">
-        <div>
-            <h3>Vaquita Marina</h3>
-            <p>Ubicada únicamente en el norte del Golfo de California, en México, esta especie está en peligro crítico
-                de extinción porque se estima, entre otras cosas, que la población total es de alrededor de 10. La
-                vaquita, que vive en un ambiente marino de menos de 50 metros de profundidad, se alimenta de una
-                variedad de peces, calamares y crustáceos.</p>
-        </div>
-    </li>
-
-    <li>
-        <img src="rinoceronte.jpg" alt="Rinoceronte de Sumatra">
-        <div>
-            <h3>Rinoceronte de Sumatra</h3>
-            <p>El rinoceronte de Sumatra está en peligro crítico de extinción con una disminución de más del 80% en tres
-                generaciones y solo quedan 250 adultos. Se estima una probabilidad del 90% de extinción en 60 años. Las
-                principales causas son la caza furtiva y la pérdida de hábitat. Habita en bosques tropicales,
-                principalmente en áreas montañosas cerca de fuentes de agua, y su movimiento varía según la estación.
-            </p>
-        </div>
-    </li>
-
-    <li>
-        <img src="gorila.jpg" alt="Gorila occidental">
-        <div>
-            <h3>Gorila occidental</h3>
-            <p>Los gorilas occidentales están en peligro crítico de extinción debido a una disminución de más del 80% en
-                su población, causada por la caza ilegal, enfermedades y pérdida de hábitat. Se espera que esta
-                reducción continúe hasta 2071, agravada por la agricultura industrial y el cambio climático. Estos
-                gorilas son diurnos, semiterrestres y construyen nidos para dormir, mayormente en el suelo.</p>
-        </div>
-    </li>
-
-    <li>
-        <img src="pangolín.avif" alt="Pangolín">
-        <div>
-            <h3>Pangolín</h3>
-            <p>Varios tipos de pangolines, como el indio y el chino, están en peligro de extinción debido a la
-                sobreexplotación, con una posible reducción del 50% en tres generaciones (2019-2043). Son cazados para
-                consumo local y tráfico internacional, especialmente de sus escamas, principalmente en China. Aunque los
-                esfuerzos para reducir la demanda han sido efectivos, se necesita una mayor aplicación de la ley para
-                evitar su sobreexplotación.</p>
-        </div>
-    </li>
-
-    <li>
-        <img src="tití.jpg" alt="Mono Tití">
-        <div>
-            <h3>Mono Tití</h3>
-            <p>Este animal está en peligro crítico de extinción, con una reducción de más del 80% en los últimos 25 años
-                debido a la deforestación y la expansión agrícola. Es una especie monógama que vive en pequeños grupos
-                familiares y se alimenta principalmente de frutas e insectos. </p>
-        </div>
-    </li>
-
-    <li>
-        <img src="elefante.jpg" alt="Elefante Africano">
-        <div>
-        <h3>Elefante Africano</h3>
-        <p>Este elefante está en peligro crítico de extinción, con una reducción de más del 80% de la población
-            continental en las últimas tres generaciones (93 años), lo cual se considera irreversible. Las principales
-            causas incluyen la pérdida de hábitat debido a la expansión humana. </p>
-        </div>
-    </li>
-
-    <li>
-        <img src="lobo.jpg" alt="Lobo Rojo">
-        <div>
-            <h3>Lobo Rojo</h3>
-            <p>El lobo reintroducido en Carolina del Norte tras extinguirse en estado salvaje en 1980 alcanzó más de 150
-                individuos en 2000. Sin embargo, en 2016 el esfuerzo de reintroducción se limitó a tierras públicas,
-                donde solo caben 20-30 lobos. Si esta restricción continúa, los lobos fuera de esa área podrían no
-                recibir protección federal y enfrentan amenazas, como la mortalidad causada por humanos, que es una de
-                las mayores preocupaciones para su supervivencia en la naturaleza. </p>
-        </div>
-    </li>
-
-    <li>
-        <img src="hamster.jpg" alt="Hámster Común">
-        <div>
-            <h3>Hámster Común</h3>
-            <p>El hámster común está en peligro crítico de extinción debido a una disminución del 50% anual en su tasa
-                de reproducción, con riesgo de desaparecer en 17 años. Su rango ha disminuido en Europa y Rusia.
-                Originalmente habitaba estepas y pastizales, pero ahora se encuentra en hábitats como tierras de
-                cultivo, bordes de campos y caminos, prados, jardines y huertos. Su dieta se compone de plantas,
-                semillas, invertebrados y pequeños vertebrados.</p>
-        </div>
-    </li>
-</div>
-
-
-
+            <div class="game-card ps">
+                <a class="game-card ps" href="/MK1.html">
+                <img  class="imagen-juego" src="https://store-images.s-microsoft.com/image/apps.15385.14007497573636681.4ee0da90-8866-4e78-bc18-31395aa61837.794c9932-4346-4da4-86ed-5e5c1110a544" alt="Juego PS5/PS4">
+                <h3>MORTAL KOMBAT 1</h3>
+                <p>Precio: COP 183.990</p>
+                <p class="age-restriction">+18</p>
+            </a>
+            </div>
+            <div class="game-card nintendo">
+                <a class="game-card nintendo" href="/MarioK.html">
+                <img  class="imagen-juego" src="https://juegosdigitalesmex.com/wp-content/uploads/2022/01/mario-kart-8-deluxe-cover-caratula-boxart.jpg" alt="Juego Nintendo">
+                <h3>MARIO KART 8 DELUXE</h3>
+                <p>Precio: COP126.990</p>
+                <p class="age-restriction">+12</p>
+            </a>
+            </div>
+            <div class="game-card pc">
+                <a class="game-card px" href="/Valorant.html">
+                <img class="imagen-juego" src="https://as01.epimg.net/meristation/imagenes/2020/03/02/game_cover/859678831583141658.jpg" alt="Juego PC">
+                <h3>Valorant</h3>
+                <p>Precio: Gratis!!</p>
+                <p class="edad-restriccion">+18</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+       <div>
+        <a href="https://www.instagram.com/">
+            <img class="redes" src="https://images.icon-icons.com/1211/PNG/512/1491580635-yumminkysocialmedia26_83102.png" alt="">
+        </a>
+        <a href="https://www.tiktok.com/discover?lang=es">
+            <img class="redes" src="https://images.icon-icons.com/2972/PNG/512/tiktok_logo_icon_186896.png" alt="">
+        </a>
+        <a href="https://www.whatsapp.com/?lang=es_LA">
+            <img class="redes" src="https://images.icon-icons.com/2429/PNG/512/whatsapp_logo_icon_147205.png" alt="">
+        </a>
+       </div>
+        <p>Soporte y contacto:</p>
+        <p>Alejandro Cardozo: alejocardobello@gmail.com</p>
+        <p> Johan Beltrán: elfofitan@gmail.com</p>
+        <p>Sebastián Méndez: mendezrojas68@gmail.com</p>
+    </footer>
 </body>
-
 </html>

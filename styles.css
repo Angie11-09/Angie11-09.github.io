@@ -1,0 +1,413 @@
+
+body {
+    background-color: #4B0082;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #3A006E;
+}
+
+.logo {
+    height: 240px
+    
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px 64px;
+    background-color:  #4B0082;
+    position: relative;
+    border-radius: 15px;
+}
+
+.enlaces {
+    list-style: none;    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: all 0.5s ease; 
+}
+
+.enlaces li {
+    margin-left: 24px;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 8px 24px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.enlaces a:hover {
+    background-color: cornflowerblue;
+}
+
+.iconos {
+    width: 150px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-left: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.linea {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0px;
+    transition: all 0.3s ease;
+}
+
+#menu {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .navbar {
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .iconos {
+        display: flex;
+    }
+
+    .enlaces {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;        
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: rgb(140, 20, 220);
+        text-align: center;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .enlaces li {
+        margin: 0;
+        padding: 20px 0;
+        width: 100%;        
+    }
+
+    .enlaces a {
+        width: 100px;
+        padding: 10px 20px;
+    }
+
+    #menu:checked + .iconos + .enlaces {
+        max-height: 600px;
+    }
+
+    #menu:checked + .iconos .linea:nth-child(1) {
+        transform: rotate(45deg) translate(15px, 3px);
+    }
+
+    #menu:checked + .iconos .linea:nth-child(2) {
+        transform: scale(0);
+    }
+
+    #menu:checked + .iconos .linea:nth-child(3) {
+        transform: rotate(-45deg) translate(15px, -4px);
+    }
+}
+
+
+
+
+
+body {
+    background-color: #4B0082;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #3A006E;
+}
+
+.logo {
+    height: 240px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.platforma {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+#xbox {
+    background-color: black;
+    color: green;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid green;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#ps {
+    background-color: white;
+    color: blue;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid blue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#nintendo {
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#pc {
+    background-color: purple;
+    color: yellow;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid yellow;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.barra-busqueda {
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.descuentos {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.descuentos:hover {
+    background-color: orange;
+    transform: scale(1.1);
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-card {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.game-card a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.imagen-juego {
+    width: 408px;
+    height: 420px;
+    border-radius: 10px;
+}
+
+#xbox:hover { background-color: green; color: black; cursor: pointer; }
+#ps:hover { background-color: blue; color: white; cursor: pointer; }
+#nintendo:hover { background-color: white; color: red; cursor: pointer; }
+#pc:hover { background-color: yellow; color: purple; cursor: pointer; }
+
+.xbox:hover { background-color: green; }
+.ps:hover { background-color: blue; }
+.nintendo:hover { background-color: red; }
+.pc:hover { background-color: purple; }
+
+footer {
+    background-color: #3A006E;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.platforma {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    
+    border-radius: 15px;
+}
+
+#xbox {
+    background-color: black;
+    color: green;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid green;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  #ps {
+    background-color: white;
+    color: blue;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid blue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  #nintendo {
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  #pc {
+    background-color: purple;
+    color: yellow;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid yellow;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+.barra-busqueda {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+.descuentos {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.descuentos:hover {
+    background-color: orange;
+    transform: scale(1.1);
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-card {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+   
+}
+.imagen-juego{ width: 408px;
+height: 420px;}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+#xbox:hover{background-color: green;color: black; cursor: pointer;}
+#ps:hover {background-color: blue;color: white; cursor: pointer;}
+#nintendo:hover {background-color: white;color: red; cursor: pointer;}
+#pc:hover{ background-color: yellow; color: purple; cursor: pointer;}
+
+.xbox:hover { background-color: green; }
+.ps:hover { background-color: blue; }
+.nintendo:hover { background-color: red; }
+.pc:hover { background-color: purple; }
+
+footer {
+    background-color: #3A006E;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    flex-wrap: wrap;
+}
+.redes{
+    height: 50px;
+    width: 50px;
+}
+

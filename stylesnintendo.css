@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: red;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 150px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a button {
+    background-color: white;
+    color: red;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid red;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#xbox:hover {
+    background-color: rgb(226, 223, 223);
+    color: rgb(78, 5, 5);
+    border: 2px solid rgb(90, 7, 7);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#ps:hover {
+    background-color: rgb(226, 223, 223);
+    color: rgb(78, 5, 5);
+    border: 2px solid rgb(90, 7, 7);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#nintendo:hover {
+    background-color: rgb(226, 223, 223);
+    color: rgb(78, 5, 5);
+    border: 2px solid rgb(90, 7, 7);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#pc:hover {
+    background-color: rgb(226, 223, 223);
+    color: rgb(78, 5, 5);
+    border: 2px solid rgb(90, 7, 7);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);}
+    #vortex:hover{
+        background-color: rgb(226, 223, 223);
+        color: rgb(78, 5, 5);
+        border: 2px solid rgb(90, 7, 7);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+
+.barra-busqueda {
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.descuentos {
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.descuentos:hover {
+    background-color: rgb(226, 223, 223);
+    color: rgb(78, 5, 5);
+    border: 2px solid rgb(90, 7, 7);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.games-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.game-card {
+    background-color: white;
+    color: red;
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    border: 2px solid red;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.game-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 2px solid red;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.game-card a:hover {
+    background-color: rgb(242, 247, 242);
+    color: red;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.imagen-juego {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.age-restriction {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+footer {
+    background-color: white;
+    color: red;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+body {
+    flex-wrap: wrap;
+}
